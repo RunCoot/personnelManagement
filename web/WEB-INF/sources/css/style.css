@@ -1,0 +1,80 @@
+body{
+    min-width: 1000px;
+    background-color: #424242;
+}
+
+#main-container{
+    width: 400px;
+    height: 272px;
+    background-color: white;
+    margin: auto;
+    margin-top: 211px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#main-container .title{
+    height: 38px;
+    background-color: #ff7575;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+#main-container .title span{
+    color: #f8fdff;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Adobe 繁黑體 Std B";
+}
+#main-container .title span:hover{
+    cursor: default;
+}
+
+#main-container .id .id-line ,#main-container .password .password-line{
+    background-image: url(/sources/imgs/small.png);
+}
+#main-container .from{
+    margin-top: 41px;
+}
+#main-container .id,#main-container .password{
+    height: 49px;
+}
+
+#main-container .id .id-line,#main-container .password .password-line{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #DADADA;
+    padding-left: 22px;
+    margin: 0 auto;
+}
+#main-container .id .id-line{
+    background-position: 4px -7px;
+}
+#main-container .password .password-line{
+    background-position: -46px -7px;
+}
+#id,#password{
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+#main-container .id-line:focus{
+    border: #242424 1px solid;
+}
+
+#submit{
+    margin: 0 auto;
+    width: 226px;
+    height: 30px;
+    background-color: #FF7575;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: initial;
+}
+#submit:hover{
+    box-shadow: 0 0 4px #40FFB2;
+}
