@@ -13,7 +13,7 @@
             <span>账号登录</span>
         </div>
         <div class="from">
-            <form id="login" action="/verify" method="post">
+            <form id="login">
                 <div class="id">
                     <div class="id-line">
                         <input id="id" type="text" name="id" placeholder="学号"/>
@@ -24,8 +24,8 @@
                         <input id="password" type="password" name="password" placeholder="密码"/>
                     </div>
                 </div>
-                <p>
-                    <input type="submit" value="登录" id="submit">
+                <p style="text-align: center; line-height: 30px;">
+                    <a id="submit" href="javascript:void(0)">登录</a>
                 </p>
             </form>
         </div>

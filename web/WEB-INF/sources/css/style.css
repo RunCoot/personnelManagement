@@ -14,7 +14,7 @@ body{
 
 #main-container .title{
     height: 38px;
-    background-color: #ff7575;
+    background-color: #63c5ff;
     line-height: 38px;
     text-align: center;
     border-radius: 5px 5px 0 0;
@@ -66,15 +66,20 @@ body{
     margin: 0 auto;
     width: 226px;
     height: 30px;
-    background-color: #FF7575;
+    background-color: #63c5ff;
     border: none;
     border-radius: 2px;
     display: block;
     color: white;
     font-size: 1em;
     font-weight: bold;
-    font-family: initial;
 }
 #submit:hover{
-    box-shadow: 0 0 4px #40FFB2;
+    box-shadow: 0 0 4px #3ed88d;
+}
+#submit:active{
+    background-color: #5aa9e0;
+}
+#login p a{
+    text-decoration: none;
 }
