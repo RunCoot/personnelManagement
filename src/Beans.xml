@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" scope="prototype">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_employee"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+
+
+    <bean id="employeeJDBCTemplate" class="com.payroll.DB.EmployeeJDBCTemplate" >
+        <property name="datasource" ref="dataSource"/>
+    </bean>
+
+    <bean id="companyManager" class="com.payroll.DB.CompanyManager" >
+        <property name="data" ref="dataSource"/>
+    </bean>
+
+    <bean id="verify" class="com.payroll.core.Verify">
+        <property name="ManagerHandle" ref="companyManager"/>
+    </bean>
+</beans>
