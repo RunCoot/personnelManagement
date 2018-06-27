@@ -7,13 +7,13 @@
 
 
     <!--//扫描控制包-->
-    <context:component-scan base-package="com.course"/>
+    <context:component-scan base-package="com.payroll"/>
 
     <!--注册注解驱动-->
     <mvc:annotation-driven/>
     <!--分配静态资源-->
     <mvc:resources location="/WEB-INF/sources/" mapping="/sources/**"/>
-    <!--<mvc:component-scan base-package="com.course"/>-->
+    <!--<mvc:component-scan base-package="com.payrolll"/>-->
 
     <!--指定视图解析器-->
     <bean name="viewResolve" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
