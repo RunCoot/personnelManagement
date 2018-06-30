@@ -1,6 +1,4 @@
 package com.personnelManagement.account;
-
-
 /**
  * 超级管理员类
  *
@@ -10,10 +8,8 @@ package com.personnelManagement.account;
  * @author iwe
  * */
 public class Manager {
-    //
-
-    private String userName;
-    private String password;
+    private String userName; //用户名
+    private String password; //密码
 
     public String getUserName() {
         return userName;

@@ -38,16 +38,9 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="content-col">
-
-
             <%--index-section--%>
             <div class="index-content no-select select table-cell">
-
-
                 <div class="logo-row">
                     <div class="display-who">
                         <span class="user">欢迎：${ianwho} 大老板</span>
@@ -57,7 +50,6 @@
                         <div class="logo"></div>
                     </div>
                 </div>
-
                 <div class="company-info">
                     <div class="info-section">
                         <div class="company-finance">
@@ -71,8 +63,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="company-employee">
                             <span class="employee-title">员工状况</span>
                             <div class="employee-section">
@@ -80,8 +70,6 @@
                                 <i class="fa fa-child"></i>
                             </div>
                         </div>
-
-
                         <div class="company-open" style="margin-top: 7px;">
                             <span class="open-title">营业情况</span>
                             <div class="open-section" style="background-color: #7f83ff;">
@@ -89,7 +77,6 @@
                                 <i class="fa fa-smile-o"></i>
                             </div>
                         </div>
-
                         <div class="company-befor" style="margin-top: 7px;">
                             <span class="befor-title">发展前景</span>
                             <div class="befor-section" style="background-color: #ff8e8e;">
@@ -97,7 +84,6 @@
                                 <i class="fa fa-sun-o"></i>
                             </div>
                         </div>
-
                         <div class="company-know" style="margin-top: 7px;">
                             <span class="know-title">知名度</span>
                             <div class="know-section" style="background-color: #ffb715;">
@@ -105,15 +91,10 @@
                                 <i class="fa fa-star-half-full"></i>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
           <%--index-section--%>
-
-
-
             <div class="employee-content no-select table-cell">
 
                 <div class="logo-row">
@@ -127,9 +108,6 @@
                     </div>
 
                 </div>
-
-
-
                 <div class="table-show">
                     <%--begin 工具栏 查询，增加--%>
                     <div class="func-bar" >
@@ -159,75 +137,10 @@
                                 <th>备注</th>
                                 <th>编辑</th>
                             </tr>
-                            <%--<tr>--%>
-                                <%--<td class="jodnumber">12313</td>--%>
-                                <%--<td class="id">441424199808181165</td>--%>
-                                <%--<td class="name">张大哥</td>--%>
-                                <%--<td class="age">32</td>--%>
-                                <%--<td class="sex">男</td>--%>
-                                <%--<td class="salary">65230</td>--%>
-                                <%--<td class="departememt">技术部</td>--%>
-                                <%--<td class="position">总监</td>--%>
-                                <%--<td class="remark">人很帅，技术很牛逼</td>--%>
-                                <%--<td class="edit">--%>
-                                    <%--<div class="change-bar">--%>
-                                        <%--<i class="fa fa-asterisk"></i>--%>
-                                        <%--<span class="change">修改</span>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="del-bar">--%>
-                                        <%--<i class="fa fa-shopping-basket"></i>--%>
-                                        <%--<span class="del">删除</span>--%>
-                                    <%--</div>--%>
-                                <%--</td>--%>
-                            <%--</tr>--%>
-                            <%--<tr>--%>
-                                <%--<td class="jodnumber">12313</td>--%>
-                                <%--<td class="id">441424199808181165</td>--%>
-                                <%--<td class="name">张大哥</td>--%>
-                                <%--<td class="age">32</td>--%>
-                                <%--<td class="sex">男</td>--%>
-                                <%--<td class="salary">65230</td>--%>
-                                <%--<td class="departememt">技术部</td>--%>
-                                <%--<td class="position">总监</td>--%>
-                                <%--<td class="remark">人很帅，技术很牛逼</td>--%>
-                                <%--<td class="edit">--%>
-                                    <%--<div class="change-bar">--%>
-                                        <%--<i class="fa fa-asterisk"></i>--%>
-                                        <%--<span class="change">修改</span>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="del-bar">--%>
-                                        <%--<i class="fa fa-shopping-basket"></i>--%>
-                                        <%--<span class="del">删除</span>--%>
-                                    <%--</div>--%>
-                                <%--</td>--%>
-                            <%--</tr>--%>
-                            <%--<tr>--%>
-                                <%--<td class="jodnumber">12313</td>--%>
-                                <%--<td class="id">441424199808181165</td>--%>
-                                <%--<td class="name">张大哥</td>--%>
-                                <%--<td class="age">32</td>--%>
-                                <%--<td class="sex">男</td>--%>
-                                <%--<td class="salary">65230</td>--%>
-                                <%--<td class="departememt">技术部</td>--%>
-                                <%--<td class="position">总监</td>--%>
-                                <%--<td class="remark">人很帅，技术很牛逼</td>--%>
-                                <%--<td class="edit">--%>
-                                    <%--<div class="change-bar">--%>
-                                        <%--<i class="fa fa-asterisk"></i>--%>
-                                        <%--<span class="change">修改</span>--%>
-                                    <%--</div>--%>
-                                    <%--<div class="del-bar">--%>
-                                        <%--<i class="fa fa-shopping-basket"></i>--%>
-                                        <%--<span class="del">删除</span>--%>
-                                    <%--</div>--%>
-                                <%--</td>--%>
-                            <%--</tr>--%>
                         </table>
                     </div>
 
                 </div>
-
-
             </div>
             <div class="about-content no-select table-cell">
 
@@ -239,15 +152,11 @@
                         <span>哪里有阳光，哪里就有我们</span>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 
     <div class="model-dialog">
-
-
         <div class="add-dialog">
             <div class="add-title">
                 <span>增加职员</span>
@@ -301,8 +210,6 @@
                 </div>
             </form>
         </div>
-
-
     </div>
     <script src="/sources/js/jquery.min.js" type="text/javascript"></script>
     <script src="/sources/js/managerOperation.js"></script>
