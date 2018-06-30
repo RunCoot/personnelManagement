@@ -1,6 +1,6 @@
-package com.payroll.DB;
+package com.personnelManagement.DB;
 
-import com.payroll.account.Manager;
+import com.personnelManagement.account.Manager;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 

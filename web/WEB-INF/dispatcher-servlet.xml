@@ -7,7 +7,7 @@
 
 
     <!--//扫描控制包-->
-    <context:component-scan base-package="com.payroll"/>
+    <context:component-scan base-package="com.personnelManagement"/>
 
     <!--注册注解驱动-->
     <mvc:annotation-driven/>

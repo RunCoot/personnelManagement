@@ -1,8 +1,8 @@
-package com.payroll.core;
+package com.personnelManagement.core;
 
 
-import com.payroll.DB.CompanyManager;
-import com.payroll.account.Manager;
+import com.personnelManagement.DB.CompanyManager;
+import com.personnelManagement.account.Manager;
 import org.springframework.dao.EmptyResultDataAccessException;
 
 /**

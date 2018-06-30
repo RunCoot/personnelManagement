@@ -1,4 +1,4 @@
-package com.payroll.company;
+package com.personnelManagement.company;
 
 public class Employee {
     private String id;

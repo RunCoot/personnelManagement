@@ -1,9 +1,9 @@
-package com.payroll.controller;
+package com.personnelManagement.controller;
 
 
-import com.payroll.DB.EmployeeJDBCTemplate;
-import com.payroll.company.Employee;
-import com.payroll.core.Verify;
+import com.personnelManagement.DB.EmployeeJDBCTemplate;
+import com.personnelManagement.company.Employee;
+import com.personnelManagement.core.Verify;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.payroll.company;
+package com.personnelManagement.company;
 
 public class Salary {
     //基本工工资

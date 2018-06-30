@@ -13,15 +13,15 @@
 
 
 
-    <bean id="employeeJDBCTemplate" class="com.payroll.DB.EmployeeJDBCTemplate" >
+    <bean id="employeeJDBCTemplate" class="com.personnelManagement.DB.EmployeeJDBCTemplate" >
         <property name="datasource" ref="dataSource"/>
     </bean>
 
-    <bean id="companyManager" class="com.payroll.DB.CompanyManager" >
+    <bean id="companyManager" class="com.personnelManagement.DB.CompanyManager" >
         <property name="data" ref="dataSource"/>
     </bean>
 
-    <bean id="verify" class="com.payroll.core.Verify">
+    <bean id="verify" class="com.personnelManagement.core.Verify">
         <property name="ManagerHandle" ref="companyManager"/>
     </bean>
 </beans>

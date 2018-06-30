@@ -1,6 +1,6 @@
-package com.payroll.DB;
+package com.personnelManagement.DB;
 
-import com.payroll.company.Employee;
+import com.personnelManagement.company.Employee;
 
 import java.util.List;
 
