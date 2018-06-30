@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>登录学生信息管理系统</title>
+    <title>Who is the boss</title>
       <link rel="stylesheet" href="/sources/css/style.css">
       <link rel="icon" href="/sources/imgs/web.ico" type="image/x-icon">
   </head>
@@ -16,7 +16,7 @@
             <form id="login">
                 <div class="id">
                     <div class="id-line">
-                        <input id="id" type="text" name="id" placeholder="学号"/>
+                        <input id="id" type="text" name="id" placeholder="账号" autofocus="autofocus"/>
                     </div>
                 </div>
                 <div class="password">

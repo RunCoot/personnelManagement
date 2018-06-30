@@ -1,17 +1,28 @@
 package com.payroll.company;
 
 public class Employee {
-    private int id;
+    private String id;
     private String name;
     private String sex;
     private double salary;
     private String position;
     private String department;
     private String remark;
-    private int jodNumber;
+    private String jodNumber;
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
 
-    public int getId() {
+
+
+    public String getId() {
         return id;
     }
 
@@ -35,7 +46,7 @@ public class Employee {
         return remark;
     }
 
-    public int getJodNumber() {
+    public String getJodNumber() {
         return jodNumber;
     }
 
@@ -47,7 +58,7 @@ public class Employee {
         return name;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -75,7 +86,7 @@ public class Employee {
         this.remark = remark;
     }
 
-    public void setJodNumber(int jodNumber) {
+    public void setJodNumber(String jodNumber) {
         this.jodNumber = jodNumber;
     }
 

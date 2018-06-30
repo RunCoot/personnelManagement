@@ -1,0 +1,481 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#main-frame{
+    min-width: 1000px;
+    width: 100%;
+}
+.menu-col{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #121a42;
+}
+.content-col{
+    min-width: 1217px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    overflow: auto;
+}
+.menu-items{
+    padding-top: 53px;
+}
+.menu-item-logo{
+    height: 92px;
+    background-size: 127px;
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-image: url("/sources/imgs/logo.png");
+    padding-bottom: 25px;
+}
+.menu-items .item{
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 1.2em;
+    background-color: #060917;
+    color: white;
+    border-bottom: 1px solid #0e1742;
+    cursor: pointer;
+    position: relative;
+}
+.menu-items .item span{
+    padding-right: 5px;
+}
+.menu-items .item i{
+    position: absolute;
+    right: 7px;
+    top: 13px;
+}
+.menu-items .item:hover{
+    background-color: #404248;
+}
+.menu-items .item:last-child{
+    color: #ea3a3a;
+}
+
+
+
+
+.active{
+    background-color: #404248 !important;
+}
+
+
+.select{
+    display: block !important;
+}
+.no-select{
+    display: none;
+}
+.active i{
+    color: #ff4242;
+}
+
+
+
+.index-content{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-row{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding-top: 30px;
+    box-shadow: 0 6px 1px #121a42;
+}
+.logo-row .logo-container{
+    float: right;
+    padding-right: 56px;
+}
+.logo-row .slogan,.logo-row .logo{
+    float: left;
+}
+.logo-row .slogan{
+    width: 266px;
+    height: 40px;
+    /*background-color: #5aa9e0;*/
+    margin-top: 55px;
+    color: black;
+    font-family: "黑体";
+    font-size: 1.2em;
+}
+.logo-row .logo{
+    width: 83px;
+    height: 58px;
+    background-size: 79px;
+    background-image: url(/sources/imgs/logo.png);
+    background-repeat: no-repeat;
+    margin-top: 22px;
+}
+
+.company-info{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+.company-info .info-section{
+    width: 600px;
+    margin: 0 auto;
+}
+.info-section .company-finance,.info-section .company-employee{
+    float: left;
+}
+/*.company-finance .info-title,.company-finance .finance-all{*/
+    /*float: left;*/
+/*}*/
+.company-finance{
+    background-color: #ffdd91;
+    padding: 5px;
+    border-radius: 0 45px;
+    height: 200px;
+}
+.info-title{
+    line-height: 37px;
+}
+.finance-all{
+    width: 132px;
+    /*box-shadow: 0 0 0 1px #26641f;*/
+}
+.finance-title{
+    width: 80px;
+    line-height: 35px;
+    background: #60a2dc;
+    display: block;
+    border-radius: 0 5px;
+    color: white;
+}
+.show-finance{
+    width: 100%;
+    line-height: 46px;
+}
+.company-employee{
+    border: 1px solid #fbf645;
+    padding: 5px;
+    border-radius: 5px;
+    /* height: 200px; */
+    margin-left: 76px;
+}
+.company-employee .employee-title,.company-employee .employee-section{
+    float: left;
+}
+.company-employee .employee-title{
+    padding-right: 28px;
+}
+.company-employee .employee-section{
+    width: 80px;
+    line-height: 35px;
+    background: #54dc43;
+    display: block;
+    border-radius: 0 5px;
+    color: white;
+    padding-left: 23px;
+}
+.company-employee .employee-section i{
+    color: #000;
+}
+
+.table-show{
+    margin-top: 10px;
+    width: 100%;
+    height: 700px;
+    /*background-color: #f1f1f1;*/
+}
+.func-bar{
+    height: 25px;
+    border-radius: 19px;
+    background: #eaeaea;
+}
+.bar-container{
+    float: right;
+}
+.find-container, .add{
+    float: left;
+}
+.search-btn, #search{
+    float: left;
+}
+#search{
+    width: 253px;
+    height: 21px;
+    border: 1px solid #1bff00;
+}
+.search-btn{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    background-color: #1bff00;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px;
+}
+.add{
+    margin-left: 23px;
+    width: 50px;
+    line-height: 25px;
+    background-color: #54ff98;
+    text-align: center;
+    color: #4a4a4a;
+    cursor: pointer;
+    border-radius: 0 5px;
+}
+
+/*表格*/
+.page-row{
+    margin-top: 26px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fbfffc;
+}
+#page-table{
+    width: 100%;
+    margin: 0 auto;
+}
+.age,.sex,.position,.name{
+    text-align: center;
+}
+.change-bar,.del-bar{
+    float: left;
+    width: 68px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 5px;
+}
+.change-bar{
+    background-color: #f1c387;
+}
+.del-bar{
+    background-color: #ff4949;
+    margin-left: 20px;
+}
+
+.add:hover,.search-btn:hover{
+    background-color: #aaffcc;
+}
+.change-bar:hover{
+    background-color: #ffe8ca;
+}
+.del-bar:hover{
+    background-color: #ffafaf;
+}
+
+.dialog-show{
+    display: block !important;
+}
+/*莫泰对话*/
+.model-dialog{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+.add-dialog{
+    background-color: white;
+    width: 400px;
+    height: 465px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 7px;
+    padding: 10px;
+}
+.add-row{
+    height: 30px;
+}
+.add-row input,.remark-cla input{
+    margin-left: 55px;
+}
+#identi-id{
+    margin-left: 7px;
+}
+#sex-id{
+    margin-left: 54px;
+}
+.remark-cla{
+    position: relative;
+}
+.remark-cla label{
+    position: absolute;
+}
+
+#add-remark{
+    margin: 0 0 0 54px;
+    width: 229px;
+    height: 132px;
+    resize: none;
+}
+.submit-add{
+    position: relative;
+}
+.add-btn{
+    width: 110px;
+    line-height: 29px;
+    background-color: #ffa22e;
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    left: 89px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.add-title{
+    text-align: center;
+    background-color: #ffa22e;
+    border-radius: 15px;
+    margin-bottom: 11px;
+    color: #fff;
+}
+.cance-add{
+    position: relative;
+}
+.cance-btn{
+    width: 110px;
+    line-height: 29px;
+    background-color: #f74141;
+    text-align: center;
+    position: absolute;
+    top: 17px;
+    left: 215px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.identi-cla{
+     position: relative;
+ }
+
+
+.tip_identi:after{
+    content: " ！身份证号已经存在 ";
+    width: 157px;
+    height: 20px;
+    /* background-color: #1bff00; */
+    position: absolute;
+    top: 2px;
+    left: 250px;
+    color: #FF574F;
+}
+.warring{
+    background-color: #ff574f;
+}
+
+
+.display-table{
+    float: left;
+    margin-left: 23px;
+    width: 50px;
+    line-height: 25px;
+    background-color: #ff4949;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0 5px;
+}
+.display-table:hover{
+    background-color: #ffad4b;
+}
+
+.save{
+    background-color: #00d454;
+    color: white;
+}
+
+
+
+.company-open,.company-befor,.company-know{
+    margin-top: 7px;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    /* height: 200px; */
+    margin-left: 76px;
+}
+.company-open{
+    border: 1px solid #7f83ff;
+}
+.company-befor{
+    border: 1px solid #ff8e8e;
+}
+.company-know{
+    border: 1px solid #ffb715;
+}
+
+
+.company-open .open-title,.company-befor .befor-title, .company-know .know-title{
+    float: left;
+    padding-right: 28px;
+}
+.open-section,.befor-section,.know-section{
+    background-color: #7f83ff;
+    width: 80px;
+    line-height: 35px;
+    /* background: #54dc43; */
+    display: block;
+    border-radius: 0 5px;
+    color: white;
+    padding-left: 23px;
+    float: left;
+}
+.open-section i{
+    color: #3fff00;
+}
+.befor-section i{
+    color: #7f83ff;
+}
+.know-section i{
+    color: #121a42;
+}
+.know-title{
+    padding-right: 45px !important;
+}
+
+
+
+.logo-content{
+    margin: 100px auto;
+    background-image: url("/sources/imgs/logo.png");
+    width: 565px;
+    height: 466px;
+    background-size: 498px 400px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.logo-top{
+    width: 67px;
+    height: 82px;
+    font-size: 4em;
+    position: absolute;
+    right: 0;
+    color: #2f5d24;
+}
+.logo-bott{
+    position: absolute;
+    bottom: 0;
+    font-size: 2em;
+    /* text-align: center; */
+    left: 120px;
+    border-bottom: 1px solid #116700;
+}
+.display-who{
+    float: left;
+    /* padding-bottom: 38px; */
+    margin-top: 56px;
+    margin-left: 32px;
+}
+
+
+

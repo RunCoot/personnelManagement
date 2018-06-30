@@ -1,6 +1,8 @@
 body{
     min-width: 1000px;
-    background-color: #424242;
+    background-image: url("/sources/imgs/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main-container{
@@ -10,6 +12,7 @@ body{
     margin: auto;
     margin-top: 211px;
     border-radius: 5px 5px 5px 5px;
+    opacity: 0.86;
 }
 
 #main-container .title{

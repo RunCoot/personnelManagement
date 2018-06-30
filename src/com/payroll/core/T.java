@@ -8,11 +8,13 @@ public class T {
     @Test
     public void a(){
         ApplicationContext a= new ClassPathXmlApplicationContext("Beans.xml");
-
-//        a.getBean("companyManager");
         Verify v = (Verify) a.getBean("verify");
-        v.verify("iwen1","fe43");
+        v.verify("ajax","3424");
 
-        System.out.println(v.isVerify());
+        System.out.println(v);
+
+
+        Verify v1 = (Verify) a.getBean("verify");
+        System.out.println(v1);
     }
 }

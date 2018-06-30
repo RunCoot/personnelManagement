@@ -20,11 +20,11 @@ public class EmployeeJDBCTemplate implements IDBAcion {
      * */
     @Override
     public void create(Employee e) {
-        String sql = "insert into employee(id,jodnumber,name,sex," +
+        String sql = "insert into employee(id,jodnumber,age,name,sex," +
                 "salary,position,department,remark)"+
-                "values(?,?,?,?,?,?,?,?)";
+                "values(?,?,?,?,?,?,?,?,?)";
 
-        datasource.update(sql,e.getId(),e.getJodNumber(),
+        datasource.update(sql,e.getId(),e.getJodNumber(),e.getAge(),
                 e.getName(),e.getSex(),e.getSalary(),
                 e.getPosition(),e.getPosition(),e.getRemark());
         return;
@@ -35,9 +35,9 @@ public class EmployeeJDBCTemplate implements IDBAcion {
      * 根据idJod删除表信息
      * */
     @Override
-    public void delete(Integer idJod) {
-        String sql = "DELETE FROM employee WHERE jobnumber=?";
-        datasource.update(sql,idJod);
+    public void delete(String jodNumber) {
+        String sql = "DELETE FROM employee WHERE jodnumber=?";
+        datasource.update(sql,new Object[]{jodNumber});
     }
 
     /***
@@ -45,10 +45,12 @@ public class EmployeeJDBCTemplate implements IDBAcion {
      */
     @Override
     public void update(Employee e) {
-        String sql = "UPDATE employee set name=?,sex=?,salary=?,position=?," +
-                "department=?,remark=? where jobnumber=?";
-        datasource.update(sql,e.getName(),e.getSex(),e.getSalary(),
-                e.getPosition(),e.getDepartment(),e.getRemark());
+        String sql = "UPDATE employee set sex=?,name=?,age=?,salary=?,position=?," +
+                "department=?,remark=? where jodnumber=?";
+
+        datasource.update(sql,new Object[]{e.getSex(),e.getName(),e.getAge(),e.getSalary(),
+                e.getPosition(),e.getDepartment(),e.getRemark(),e.getJodNumber()});
+
     }
 
 
@@ -61,5 +63,23 @@ public class EmployeeJDBCTemplate implements IDBAcion {
         List<Employee> le = datasource.query(sql,new EmployeeMapper());
         return le;
     }
+
+    /**
+     * 查询员工总数
+     * */
+    @Override
+    public int howMany() {
+        String sql = "select count(*) from employee";
+        Integer temp = datasource.queryForObject(sql,Integer.class);
+        return temp;
+    }
+
+    @Override
+    public List<Employee> find(String jodNumber) {
+        String sql = "SELECT * FROM employee WHERE jodNumber LIKE '%"+jodNumber+"%'";
+        List<Employee> le = datasource.query(sql,new EmployeeMapper());
+        return le;
+    }
+
 
 }
